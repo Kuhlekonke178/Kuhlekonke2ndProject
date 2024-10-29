@@ -9,6 +9,14 @@ package com.mycompany.login;
  * @author RC_Student_lab
  */
 public class Task {
+
+    static void addTasks() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    static String returnTotalHours() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private String taskName;
     private String taskDescription;
     private String developerDetails;
@@ -40,6 +48,16 @@ public class Task {
         return taskDuration;
     }
 
+   
+
+    public String printTaskDetails() {
+        return String.format("Task Name: %s, ID: %s, Description: %s, Developer: %s, Duration: %d hrs, Status: %s",
+                taskName, taskID, taskDescription, developerDetails, taskDuration, taskStatus);
+    }
+    
+    
+    
+    
     // Get full task details
     public String getFullTaskDetails() {
         return "Task Status: " + taskStatus + "\n" +
@@ -50,6 +68,8 @@ public class Task {
                "Task ID: " + taskID + "\n" +
                "Duration: " + taskDuration + " hours";
     }
+    
 }
+
     
 
